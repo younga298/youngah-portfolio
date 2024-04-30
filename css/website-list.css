@@ -1,0 +1,402 @@
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+#website-list {
+  width: 100%;
+  height: 920px;
+  float: right;
+  display: none;
+}
+#website-list #side-menubar {
+  transition: 2s;
+  z-index: 10;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+}
+#website-list #side-menubar .side-menubar {
+  width: 100%;
+  height: 50%;
+  margin-left: 10%;
+  margin-top: 60%;
+  position: relative;
+  background-image: url(../img/side-bg.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+#website-list #side-menubar .side-menubar .side-img-position {
+  position: absolute;
+  top: 49%;
+  left: 10%;
+}
+#website-list #side-menubar .side-menubar .side-img-position:hover .button-hover {
+  display: block;
+}
+#website-list #side-menubar .side-menubar .side-img-position:hover .button-on {
+  display: none;
+}
+#website-list #side-menubar .side-menubar .side-img-position .button-hover {
+  display: none;
+}
+#website-list #side-menubar .side-menubar .side-img-position img {
+  width: 180px;
+}
+#website-list .website-list {
+  margin-top: 100px;
+  transition: 2s;
+  float: right;
+  width: 80%;
+  height: 3400px;
+}
+#website-list .website-list .lists {
+  width: 6000px;
+  position: sticky;
+  top: 160px;
+  display: flex;
+}
+#website-list .website-list .lists li {
+  width: 800px;
+  height: 800px;
+}
+#website-list .website-list .lists li:nth-of-type(1) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#website-list .website-list .lists li:nth-of-type(2) {
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#website-list .website-list .lists li:nth-of-type(3) {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#website-list .website-list .lists li:nth-of-type(4) {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#website-list .website-list .lists li:nth-of-type(5) {
+  background-color: rgb(202, 17, 171);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#website-list .website-list .lists .project-box {
+  width: 690px;
+  height: 507px;
+  border-radius: 10px;
+  margin-bottom: 110px;
+  overflow: hidden;
+}
+#website-list .website-list .lists .project-box .detail-box {
+  width: 100%;
+  height: 86%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text {
+  width: 52%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 23px;
+  background-color: #000;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text p {
+  color: #e3e2e3;
+  font-size: 15px;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .border-top {
+  border-top: 2px solid rgba(227, 226, 226, 0.5);
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .border-top p {
+  line-height: 25px;
+  padding-top: 7px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text div {
+  width: 90%;
+  height: 45%;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text {
+  background-image: url(../img/folder.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  text-align: center;
+  padding-top: 41%;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text .neon-text {
+  top: 50%;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text .neon-text1 {
+  top: -20%;
+  position: absolute;
+  transition: transform 0.5s ease;
+  color: #000;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text .folder-text_hover {
+  position: relative;
+  top: 0%;
+  display: none;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover {
+  background-image: url(../img/bg-white_folder.png);
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover .folder-text_hover {
+  display: block;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover .neon-text, #website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover .neon-text1 {
+  transform: translateY(90px);
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-text:not(:hover) .neon-text {
+  transform: translateY(0);
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button {
+  width: 90%;
+  height: 45%;
+  width: 42%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button .rotating-image {
+  animation: rotate 20s linear infinite;
+  margin-left: 9px;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button button {
+  width: 100%;
+  height: 40%;
+  background-color: transparent;
+  border: 0.01px solid rgba(227, 226, 226, 0.5);
+  overflow: hidden;
+  transition: 0.2s ease;
+  border-radius: 5px;
+  position: relative;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button button .neon-text {
+  position: absolute;
+  color: #fff;
+  top: 20%;
+  left: 19%;
+  transition: transform 0.5s ease;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button button .neon-text1 {
+  position: absolute;
+  top: -40%;
+  left: 19%;
+  transition: transform 0.5s ease;
+  color: #000;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button button:hover {
+  background-color: #fff;
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button button:hover .neon-text, #website-list .website-list .lists .project-box .detail-box .left-text .detail-button button:hover .neon-text1 {
+  transform: translateY(20px);
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .detail-button button:not(:hover) .neon-text {
+  transform: translateY(0);
+}
+#website-list .website-list .lists .project-box .detail-box .left-text .folder-datail {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#website-list .website-list .lists .project-box .detail-box .middle-website {
+  width: 48%;
+  height: 100%;
+  float: left;
+  overflow-y: auto;
+}
+#website-list .website-list .lists .project-box .detail-box .middle-website::-webkit-scrollbar {
+  width: 0.7em;
+}
+#website-list .website-list .lists .project-box .detail-box .middle-website::-webkit-scrollbar-track:vertical {
+  background: -webkit-linear-gradient(180deg, #fff, #fff, #fff, #fff, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #fff, #fff, #fff);
+  border-radius: 10px;
+  width: 8px;
+  height: 50px;
+}
+#website-list .website-list .lists .project-box .detail-box .middle-website::-webkit-scrollbar-thumb {
+  background: rgba(227, 227, 227, 0.75);
+  border-radius: 2em;
+}
+#website-list .website-list .lists .project-box .detail-box .middle-website img {
+  width: 100%;
+}
+#website-list .website-list .lists .project-box .detail-box .right-text {
+  width: 20%;
+  height: 94%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar {
+  padding-top: 5px;
+  width: 100%;
+  height: 15.9%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: -5px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top {
+  width: 100%;
+  height: 51%;
+  background-color: #fff;
+  display: flex;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-left {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-left div {
+  width: 20%;
+  height: 60%;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle {
+  width: 60%;
+  height: 86%;
+  background: #cfcfcf;
+  border-radius: 38px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  margin-top: 3px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle .unlocked-icon {
+  width: 4%;
+  height: 69%;
+  margin-left: 7px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle .bar-middle-side {
+  width: 34%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle .bar-middle-side div {
+  width: 20%;
+  height: 90%;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle form {
+  border: 0px solid transparent;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle form input {
+  background-color: #cfcfcf;
+  border: 0px;
+  padding-right: 30px;
+  caret-color: #818181;
+  font-weight: bold;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-middle form input:focus {
+  outline: none;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-right {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-top .bar-right div {
+  width: 20%;
+  height: 60%;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom {
+  width: 100%;
+  height: 50%;
+  background-color: #e3e2e3;
+  box-sizing: content-box;
+  padding-top: 4px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon {
+  display: flex;
+  width: 100%;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .circle {
+  width: 85px;
+  height: 38px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .circle div {
+  width: 12px;
+  height: 12px;
+  background-color: #818181;
+  border-radius: 50px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-window {
+  width: 196px;
+  height: 38px;
+  padding-top: 1.4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-window h5 {
+  padding: 6px 17px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-window .closebtn {
+  width: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-window .closebtn img {
+  margin-left: -6px;
+  width: 14px;
+  height: 13px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-icon2 {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-bottom: 4px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-icon2 div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  justify-content: center;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-icon2 .small-icon {
+  width: 13.8px;
+  height: 11.5px;
+}
+#website-list .website-list .lists .project-box .box-bar .bar-bottom .bar-icon .bar-icon2 img {
+  width: 18px;
+  height: 17px;
+}

@@ -1,0 +1,77 @@
+@charset "utf-8";
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+
+
+$black:#000;
+$white:#fff;
+$size : 50px;
+// $font-family : "Noto Sans KR", sans-serif;
+$font-family : "Galmuri11", sans-serif;
+$gray:#818181;
+$light-gray:#cfcfcf;
+$white-gray:#e3e2e3;
+$word-spacing: 5px;
+$margin-bottom: 110px;
+$margin-top: 110px;
+$border-radius:50px;
+$width: 90%; 
+$height: 45%;
+@mixin font{
+    font-size: $size;
+} 
+@mixin header-style{
+    font-size: 40px;
+    padding: 25px;
+}
+@mixin font-family{
+    font-family: $font-family;
+}
+@mixin wordspacing{
+    word-spacing: $word-spacing;
+}
+
+
+@mixin flex-end{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@mixin flex-start{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+@mixin mb{
+    margin-bottom:$margin-bottom;
+}
+@mixin mt{
+   margin-top:$margin-top;
+}
+@mixin space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin web-side-size{
+    width: $width; height: $height;
+}
+@mixin folder-position{
+    position: absolute;
+    @content;
+}
+@mixin transition-style{
+    transition: transform 0.5s ease;
+}
+@mixin forder-skill-style{
+   div{ padding:80px 20px; font-size: 20px;}/*div*/
+   h1{ padding-left: 14px; font-size: 30px;}/*h1*/
+    width: 560px; height: 400px;
+    position: absolute;
+}
