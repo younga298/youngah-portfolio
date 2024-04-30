@@ -63,25 +63,21 @@
   align-items: flex-end;
 }
 #website-list .website-list .lists li:nth-of-type(2) {
-  background-color: purple;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 #website-list .website-list .lists li:nth-of-type(3) {
-  background-color: yellow;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 #website-list .website-list .lists li:nth-of-type(4) {
-  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 #website-list .website-list .lists li:nth-of-type(5) {
-  background-color: rgb(202, 17, 171);
   display: flex;
   justify-content: center;
   align-items: flex-end;
