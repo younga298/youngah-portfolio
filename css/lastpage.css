@@ -1,0 +1,46 @@
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+/****/
+/* variables */
+/****/
+@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+#last_page {
+  width: 80%;
+  height: 620px;
+  border-top: 2px solid #cfcfcf;
+  float: right;
+  background-color: #fff;
+}
+#last_page h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  text-align: center;
+  padding: 40px;
+}
+#last_page .page_wrap {
+  width: 80%;
+  height: 70%;
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+#last_page .page_wrap ul {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color: palegoldenrod;
+}
+#last_page .page_wrap ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  background-color: purple;
+  text-align: center;
+}
+#last_page .page_wrap ul li img {
+  width: 5%;
+}

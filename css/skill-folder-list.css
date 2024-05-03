@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+/****/
+/* variables */
+/****/
 @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 #skill-folder-list {
   width: 80%;
@@ -10,7 +13,7 @@
 }
 #skill-folder-list p {
   font-size: 70px;
-  padding: 70px;
+  padding: 70px 130px;
   font-weight: 600;
   text-align: right;
 }
@@ -18,8 +21,11 @@
   width: 100%;
   height: 500px;
   margin-left: 85px;
-  font-size: 31px;
-  font-family: "Noto Sans KR", sans-serif;
+  margin-top: 50px;
+  font-size: 43px;
+  font-family: "Galmuri11", sans-serif;
+  font-weight: bold;
+  color: #cfcfcf;
 }
 #skill-folder-list .folder-wrap {
   position: absolute;
@@ -106,4 +112,15 @@
 #skill-folder-list .folder-wrap .folder .folder-img {
   position: absolute;
   width: 100%;
+}
+#skill-folder-list .folder-wrap .folder .skillimg {
+  width: 20%;
+  margin-left: 79%;
+}
+#skill-folder-list .folder-wrap .folder .side-img {
+  width: 50%;
+  margin-left: 50%;
+}
+#skill-folder-list .folder-wrap .folder .img-margin-top {
+  margin-top: 6%;
 }

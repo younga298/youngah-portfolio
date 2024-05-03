@@ -41,7 +41,8 @@
 //     background-size: 40px 40px;
 //     animation: progress-bar-stripes 2s linear infinite;
 //   }
-* {cursor: url(../img/cursor.png),url(../img/cursor.png) 5 5, progress;
+* {
+    cursor: url(../img/cursor.png),url(../img/cursor.png) 5 5, progress;
     @include font-family;
     margin: 0;
     padding: 0;

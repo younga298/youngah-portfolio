@@ -24,7 +24,7 @@ setTimeout(() => {
     $('.website-list')
         .css({
             // transform: 'translateY(0px)',  // 시작 위치
-            borderRadius: '80px',
+            borderRadius: '0px',
             backgroundColor:"white",
             opacity: '0',  // 시작 투명도를 0
 
@@ -36,7 +36,7 @@ setTimeout(() => {
             width:'80%'
 
         }, {
-            duration: 500,
+            duration: 200,
             easing: 'swing',
             queue: false,  // 애니메이션 큐 사용 안 함
             width:'79.98%'

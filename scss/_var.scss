@@ -15,8 +15,27 @@ $word-spacing: 5px;
 $margin-bottom: 110px;
 $margin-top: 110px;
 $border-radius:50px;
-$width: 90%; 
+$width: 94%; 
 $height: 45%;
+/****/
+/* variables */
+$bg: #FF4E94;
+$white-1: #FFFFFF;
+$white-2: #88D3E3;
+
+$red-1: #D20066;
+$red-2: #AE0061;
+$red-3: #760A56;
+$red-4: #5F0146;
+
+$yellow-1: #FFC359;
+$yellow-2: #FF813C;
+
+$blue: #00A3D1;
+
+$radius: 20px;
+/****/
+
 @mixin font{
     font-size: $size;
 } 

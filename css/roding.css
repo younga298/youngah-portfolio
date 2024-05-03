@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
+/****/
+/* variables */
+/****/
 @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 * {
   cursor: url(../img/cursor.png), url(../img/cursor.png) 5 5, progress;
