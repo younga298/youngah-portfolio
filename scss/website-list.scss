@@ -453,10 +453,10 @@
         float: right;
         // background-color:$white;
         width: 80%;
-        height: 3400px;
+        height: 4000px;
         
         .lists{
-            width: 6000px;position: sticky; top: 160px; display: flex;
+            width: 4500px;position: sticky; top: 160px; display: flex;
             li {
                 width: 800px;
                 height: 800px;
@@ -529,19 +529,19 @@
                 .detail-button{ @include web-side-size;width: 42%; height: 50%; display: flex;
                     align-items: flex-end;
                     .rotating-image{animation:rotate 20s linear infinite;    margin-left: 9px;}
-                      button{width: 100%; height: 40%; background-color: transparent; border: 0.01px solid rgba(227, 226, 226, 0.5); overflow: hidden; transition: 0.2s ease;
+                      .button{width: 100%; height: 40%; background-color: transparent; border: 0.01px solid rgba(227, 226, 226, 0.5); overflow: hidden; transition: 0.2s ease;
                     border-radius: 5px; position: relative;
-                    .neon-text{position: absolute; color: $white; top: 20%; left: 19%; @include transition-style;}
-                    .neon-text1{position: absolute; top: -40%; left: 19%; @include transition-style; color: $black}
+                    .neon-text{position: absolute; color: $white; top: 20%; left:16%; @include transition-style;}
+                    .neon-text1{position: absolute; top: -40%; left: 16%; @include transition-style; color: $black}
                    }
-                   button:hover{background-color: $white;
+                   .button:hover{background-color: $white;
                     // transition: ease-in-out 0.4s;
                 }
                 
-                button:hover .neon-text, button:hover .neon-text1 {
+                .button:hover .neon-text, .button:hover .neon-text1 {
                     transform: translateY(20px); 
                    }
-                   button:not(:hover) .neon-text {
+                   .button:not(:hover) .neon-text {
                     transform: translateY(0);
                    }
                    }
@@ -553,7 +553,7 @@
             .middle-website{width: 48%; height: 100%;float: left; overflow-y: auto; &::-webkit-scrollbar{
                 width: 0.7em;
             }
-            &::-webkit-scrollbar-track:vertical {
+            &::-webkit-scrollbar-track {
                 background: -webkit-linear-gradient(180deg, #fff, #fff, #fff, #fff, rgba( 0, 0, 0, 0.5), rgba( 0, 0, 0, 0.5), rgba( 0, 0, 0, 0.5), #fff, #fff, #fff);
                 border-radius: 10px; width:8px;height: 50px;
               }
@@ -576,9 +576,9 @@
                     flex-direction: column-reverse;
                     margin-top: -5px;
                     .bar-top {width: 100%; height: 51%;  background-color:$white; display: flex;
-                    .bar-left{width: 20%; height: 100%;@include space-evenly;
+                    .bar-left{width: 20%; @include space-evenly;
                     div{
-                        width: 20%; height: 60%;}}
+                        width: 20%; height: 48%;}}
                     .bar-middle{width: 60%;  height: 86%; 
                         background: $light-gray; border-radius: 38px; padding: 5px;  @include space-between; align-items: center; margin-top: 3px;
                         .unlocked-icon{ width:4%; height: 69%;margin-left: 7px;}
@@ -591,13 +591,13 @@
                     form{ border: 0px solid transparent; 
                        input{
                         background-color: $light-gray; border: 0px; padding-right: 30px;
-                        caret-color: $gray; font-weight: bold;
+                        caret-color: $gray; font-weight: bold; display: flex;
                        }
                        input:focus{outline: none;}
                     }}
                     .bar-right{width: 20%;  height: 100%; display: flex; justify-content: space-evenly; align-items: center;
                     div{
-                        width: 20%; height: 60%;}}
+                        width: 20%; height: 52%;}}
                     }
                     .bar-bottom {width: 100%; height: 50%; background: {color: $white-gray}; box-sizing: content-box; padding-top: 4px;
                     .bar-icon {display: flex; width: 100%;
@@ -606,7 +606,7 @@
                             width: 12px; height: 12px;  background-color: $gray; border-radius: $border-radius;
                         }
                     }
-                      .bar-window{width: 196px; height: 38px;    padding-top: 1.4px; display: flex; justify-content: space-between; align-items: center;
+                      .bar-window{width: 196px; height: 38px;    padding-top: 1.4px; display: flex; justify-content: space-between; align-items: center; margin-top: 1px;
                         h5{
                             padding: 6px 17px;
                         }

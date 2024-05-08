@@ -12,10 +12,6 @@ $(window).scroll(()=>{
     }
 })
 
-document.forms[0].id.focus();
-document.forms[0].id.select();
-
-
 setTimeout(()=>{
     $('#website-list').css("display","block"); /**block으로 수정 해야함*/
 },5500)
@@ -45,11 +41,3 @@ setTimeout(() => {
         //     transform: 'translateY(100px)',  // 원래 위치로 되돌아옴
         // },200);
 }, 5500);
-
-
-
- /****
-    ***
-    button click시 이미지,글자 변경
-    ***/ 
-   

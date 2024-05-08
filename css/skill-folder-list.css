@@ -5,7 +5,7 @@
 @import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 #skill-folder-list {
   width: 80%;
-  height: 4000px;
+  height: 3200px;
   border-top: 2px solid #cfcfcf;
   float: right;
   background-color: #fff;
@@ -56,7 +56,7 @@
 #skill-folder-list .folder-wrap .folder .folder-skill h1 {
   padding-left: 20px;
   padding-top: 10px;
-  font-size: 25;
+  font-size: 25px;
 }
 #skill-folder-list .folder-wrap .folder1 {
   bottom: 0;

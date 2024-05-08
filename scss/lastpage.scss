@@ -1,19 +1,69 @@
 @charset "UTF-8";
 @import "var";
-@import url("https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-#last_page{
-    width:80%; height: 620px; border-top: 2px solid #cfcfcf; float: right; background-color: $white;
-    h1{width: 100%; text-align: center; font-size:$size; text-align: center; padding: 40px;}
-    .page_wrap{
-         width: 80%; height: 70%; width: 80%; height: 70%; margin: 0 auto; position: relative;
-         ul{
-            display: flex; width: 100%; margin: 0 auto; background-color: palegoldenrod;
-            li{
-                display: flex; flex-direction: column; justify-content: space-around; align-items: center; width: 50%; background-color: purple; text-align: center;
-            
+#last_page {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 80%;
+    height: 800px;
+    border-top: 2px solid #cfcfcf;
+    float: right;
+    background-color: $white;
+    padding: 22px;
+
+    .last_page {
+        background-image: url(../img/footerimg2.png);
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .text {
+            margin: 0 auto;
+            width: 70%;
+            height: 73%;
+            background-color: rgba(248, 249, 250, 0.3);
+            position: absolute;
+            top: 15%;
+            left: 17%;
+            border-radius: 24px;
+
+            .text-top {
+                font-size: 50px;
+                font-weight: bold;
+                text-align: center;
+                padding: 30px;
+                
             }
-         }
-        ul li img{width: 5%;}
-}}
+
+            .text-middle {
+                width: 40%;
+                height: 40%;
+                text-align: center;
+                font-size: 27px;
+                background-color: rgba(255, 255, 255, 0.6);
+                width: 40%;
+                border-radius: 24px;
+                padding: 40px;
+                position: absolute;
+                left: 30%;
+                top: 36%;
+                ul {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 20%;
+                    justify-content: space-around;
+                    margin: 0 auto;
+                    margin-top: 14%;
+                    font-size: 20px;
+                    li{a{
+                        color: $black;
+                    }}
+                    li:hover{transform: scale(1.2);}
+                }
+            }
+        }}
+}
