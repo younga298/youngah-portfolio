@@ -24,18 +24,17 @@
             margin: 0 auto;
             width: 70%;
             height: 73%;
-            background-color: rgba(248, 249, 250, 0.3);
             position: absolute;
-            top: 15%;
+            top: 25%;
             left: 17%;
-            border-radius: 24px;
 
             .text-top {
                 font-size: 50px;
                 font-weight: bold;
                 text-align: center;
                 padding: 30px;
-                
+                color: $white;
+                margin-top: -3%;
             }
 
             .text-middle {
@@ -43,13 +42,12 @@
                 height: 40%;
                 text-align: center;
                 font-size: 27px;
-                background-color: rgba(255, 255, 255, 0.6);
                 width: 40%;
-                border-radius: 24px;
                 padding: 40px;
                 position: absolute;
                 left: 30%;
                 top: 36%;
+
                 ul {
                     display: flex;
                     align-items: center;
@@ -59,11 +57,78 @@
                     margin: 0 auto;
                     margin-top: 14%;
                     font-size: 20px;
-                    li{a{
+
+                    li {
+                        background-color: #212529;
+                        color: $white;
+                        padding: 10px;
+                        width: 40%;
+                        border-radius: 30px;
+
+                        a {
+                            color: $white;
+                        }
+                    }
+
+                    li:hover {
+                        transform: scale(1.2);
+                        background-color: $white;
                         color: $black;
-                    }}
-                    li:hover{transform: scale(1.2);}
+                    }
+
+                    li:hover a {
+                        color: $black;
+                    }
                 }
+            p{color: $white;}}
+
+            .middle-popup {
+                display: none;
+                width: 724px;
+                height: 296px;
+                border-radius: 24px;
+                padding: 40px;
+                position: absolute;
+                left: 14%;
+                top: 6%;
+                background-image: url(../img/icon2.png);
+                background-repeat: no-repeat;
+
+                background: {
+                    position: bottom;
+                    size: 100%;
+                }
+
+                img {
+                    width: 244px;
+                    height: 59px;
+                    margin-left: 3%;
+                }
+
+                h2 {
+                    position: absolute;
+                    left: 15%;
+                    top: 17%;
+                }
+
+                p {
+                    font-size: 25px;
+                    padding: 36px 95px;
+                }
+
+                .close-button {
+                    width: 42px;
+                    height: 42px;
+                    position: absolute;
+                    right: 14%;
+                    bottom: 12%;
+                    background-image: url(../img/icon3.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 54%;
+                }
+           
             }
-        }}
+        }
+    }
 }
