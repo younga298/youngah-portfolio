@@ -429,10 +429,10 @@
     display: block;    
     z-index: 5;
     font-weight: bold;
-    font-size: 31px;
+    font-size: 27px;
     width: 100%;
     height: 100%;
-    top: 19%;
+    top: 23%;
     text-align: center;
   }
   
@@ -516,16 +516,18 @@
                     text-align: center; padding-top: 41%; width: 49%; display: flex; flex-direction: column; align-items: center; position: relative; overflow: hidden; transition: transform 0.3s ease;
                     .neon-text{top: 50%; position: absolute; @include transition-style;}
                     .neon-text1{top: -20%; position: absolute; @include transition-style; color: $black;}
-                    .folder-text_hover{position: relative; top: 0%; display: none;}
-                    &:hover {background-image: url(../img/bg-white_folder.png); }
-                    &:hover .folder-text_hover{display: block;}
-                    &:hover .neon-text, &:hover .neon-text1{
+                    &:hover {
+                        background-image: url(../img/bg-white_folder.png);
+                    }
+                    &:hover .neon-text,
+                    &:hover .neon-text1 {
                         transform: translateY(90px);
                     }
+
                     &:not(:hover) .neon-text {
-                        transform: translateY(0); 
+                        transform: translateY(0);
                     }
-                }
+                    }
                 .detail-button{ @include web-side-size;width: 42%; height: 50%; display: flex;
                     align-items: flex-end;
                     .rotating-image{animation:rotate 20s linear infinite;    margin-left: 9px;}

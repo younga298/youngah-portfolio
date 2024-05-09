@@ -449,10 +449,10 @@
   display: block;
   z-index: 5;
   font-weight: bold;
-  font-size: 31px;
+  font-size: 27px;
   width: 100%;
   height: 100%;
-  top: 19%;
+  top: 23%;
   text-align: center;
 }
 #website-list #side-menubar .side-menubar a {
@@ -577,16 +577,8 @@
   transition: transform 0.5s ease;
   color: #000;
 }
-#website-list .website-list .lists .project-box .detail-box .left-text .folder-text .folder-text_hover {
-  position: relative;
-  top: 0%;
-  display: none;
-}
 #website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover {
   background-image: url(../img/bg-white_folder.png);
-}
-#website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover .folder-text_hover {
-  display: block;
 }
 #website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover .neon-text, #website-list .website-list .lists .project-box .detail-box .left-text .folder-text:hover .neon-text1 {
   transform: translateY(90px);
